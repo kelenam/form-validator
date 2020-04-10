@@ -1,0 +1,59 @@
+.form {
+    padding: 30px 40px;
+
+    button {
+        cursor: pointer;
+        background-color: #3498db;
+        border: 2px solid #3498db;
+        border-radius: 4px;
+        color: #fff;
+        display: block;
+        font-size: 16px;
+        padding: 10px;
+        margin-top: 20px;
+        width: 100%;
+    }
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+
+    label {
+        display: block;
+        color: #777;
+        margin-bottom: 5px;
+    }
+
+    input {
+        border: 2px solid #f0f0f0;
+        border-radius: 4px;
+        display: block;
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+        
+        &:focus {
+            outline: 0;
+            border-color: #777;
+        }
+    }
+    &.success input {
+        border-color: $success-color;
+    }
+    &.error input {
+        border-color: $error-color;
+    }
+
+    small {
+        color: $error-color;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        visibility: hidden;
+    }
+    &.error small {
+        visibility: visible;
+    }
+}
